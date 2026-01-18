@@ -1,157 +1,103 @@
-{
-  "config": [
-    {
-      "name": "Banner",
-      "options": [
-        {
-          "type": "text",
-          "key": "banner",
-          "value": "https://www.pepedepin.com/banner-architects.png",
-          "placeholder": "https://(1440*220)"
-        }
-      ],
-      "tag": "Basic Info"
-    },
-    {
-      "name": "Avatar",
-      "options": [
-        {
-          "type": "text",
-          "key": "avatar",
-          "value": "https://www.pepedepin.com/king-pepe-avatar.png",
-          "placeholder": "https://(100*100)"
-        }
-      ],
-      "tag": "Basic Info"
-    },
-    {
-      "name": "Name",
-      "options": [
-        {
-          "type": "text",
-          "key": "name",
-          "value": "PEPEDEPIN - The Architects' Empire",
-          "placeholder": "Enter the name"
-        }
-      ],
-      "tag": "Basic Info"
-    },
-    {
-      "name": "Bio",
-      "options": [
-        {
-          "type": "text",
-          "key": "bio",
-          "value": "The first community-driven DePIN infrastructure on Solana. Built by 100 Architects, designed for an eternal legacy. Slow but steady, building foundations that cannot be shaken.",
-          "placeholder": "Enter the bio"
-        }
-      ],
-      "tag": "Basic Info"
-    },
-    {
-      "name": "ArchitectTools",
-      "options": [
-        {
-          "type": "text",
-          "key": "GeneratorName",
-          "value": "AI Image & Video Generator",
-          "placeholder": "Enter the name"
-        },
-        {
-          "type": "text",
-          "key": "GeneratorLink",
-          "value": "https://generator.pepedepin.com/",
-          "placeholder": "https://"
-        }
-      ],
-      "tag": "Architect Tools"
-    },
-    {
-      "name": "JupiterSwap",
-      "options": [
-        {
-          "type": "text",
-          "key": "JupiterName",
-          "value": "Buy $PEPEDEPIN on Jupiter",
-          "placeholder": "Enter the name"
-        },
-        {
-          "type": "text",
-          "key": "JupiterLink",
-          "value": "https://jup.ag/swap/SOL-GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump?utm_source=BitgetWallet",
-          "placeholder": "https://"
-        }
-      ],
-      "tag": "Trade & Charts"
-    },
-    {
-      "name": "DexScreener",
-      "options": [
-        {
-          "type": "text",
-          "key": "ChartName",
-          "value": "Live Chart (DexScreener)",
-          "placeholder": "Enter the name"
-        },
-        {
-          "type": "text",
-          "key": "ChartLink",
-          "value": "https://dexscreener.com/solana/GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump",
-          "placeholder": "https://"
-        }
-      ],
-      "tag": "Trade & Charts"
-    },
-    {
-      "name": "ContractAddress",
-      "options": [
-        {
-          "type": "text",
-          "key": "CAValue",
-          "value": "GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump",
-          "placeholder": "Contract Address"
-        }
-      ],
-      "tag": "Basic Info"
-    },
-    {
-      "name": "Telegram",
-      "options": [
-        {
-          "type": "text",
-          "key": "telegram",
-          "value": "https://t.me/pepedepin_portal",
-          "placeholder": "https://",
-          "class": "mediaList"
-        }
-      ],
-      "tag": "Social Links"
-    },
-    {
-      "name": "Twitter",
-      "options": [
-        {
-          "type": "text",
-          "key": "twitter",
-          "value": "https://twitter.com/PepeDepin",
-          "placeholder": "https://",
-          "class": "mediaList"
-        }
-      ],
-      "tag": "Social Links"
-    },
-    {
-      "name": "Website",
-      "options": [
-        {
-          "type": "text",
-          "key": "website",
-          "value": "https://pepedepin.com/",
-          "placeholder": "https://",
-          "class": "mediaList"
-        }
-      ],
-      "tag": "Social Links"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>$PEPEDEPIN – The Eternal DePIN Empire</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+  <script src="https://unpkg.com/@solana/spl-token@latest/lib/index.iife.min.js"></script>
+  <style>
+    body { background: #050505; color: #39FF14; font-family: 'Courier New', monospace; }
+    .neon { text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14; }
+    .gold { color: #D4AF37; }
+    .card { background: #1A1A1A; border: 1px solid #39FF14; border-radius: 12px; padding: 20px; margin: 20px 0; box-shadow: 0 0 15px rgba(57, 255, 20, 0.3); }
+  </style>
+</head>
+<body class="min-h-screen p-8">
+  <header class="text-center mb-12">
+    <h1 class="text-5xl font-bold gold neon mb-4">$PEPEDEPIN</h1>
+    <p class="text-2xl">The Eternal DePIN Empire on Solana</p>
+    <p class="text-lg mt-2">Built by 90 Architects • CA: GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump</p>
+  </header>
+
+  <div class="max-w-4xl mx-auto">
+    <!-- Hero / Buy Now -->
+    <div class="card text-center">
+      <h2 class="text-3xl gold mb-4">The King Has Arrived</h2>
+      <p class="mb-6">Community-driven DePIN. Slow but steady, creating an unshakable legacy.</p>
+      <a href="https://pump.fun/GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump" 
+         class="bg-depin-green text-black px-8 py-4 rounded-full text-xl font-bold hover:bg-depin-gold transition inline-block">
+        Buy Now on Pump.fun
+      </a>
+    </div>
+
+    <!-- Empire Info -->
+    <div class="card">
+      <h2 class="text-2xl gold mb-4">The Empire in Construction</h2>
+      <p>PEPEDEPIN is more than a memecoin – it's a true DePIN empire.</p>
+      <ul class="list-disc pl-6 mt-4">
+        <li>Supply: 2,000,000,000 tokens</li>
+        <li>Liquidity: ~$1.82K</li>
+        <li>Market Cap: ~$4.18K</li>
+        <li>90 Active Architects</li>
+      </ul>
+      <a href="https://t.me/+ppq2m577cMJjOTdh" class="mt-6 inline-block bg-depin-green text-black px-6 py-3 rounded-full">Join the Council</a>
+    </div>
+
+    <!-- Challenge of the Sun -->
+    <div class="card">
+      <h2 class="text-2xl gold mb-4">Challenge of the Sun</h2>
+      <p>Proof of loyalty:</p>
+      <ul class="list-disc pl-6">
+        <li>Buy ≥1 SOL of $PEPEDEPIN</li>
+        <li>Hold your position</li>
+        <li>Receive 10% loyalty airdrop directly to your wallet</li>
+      </ul>
+      <p class="mt-4 gold">The king rewards the faithful!</p>
+    </div>
+
+    <!-- Eternal Vault with AI -->
+    <div class="card text-center">
+      <h2 class="text-2xl gold mb-4">Eternal Vault – Create Forever</h2>
+      <p class="mb-6">Generate eternal memes, videos, and content. Use AI tools from any platform.</p>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="https://grok.x.ai/" target="_blank" class="bg-depin-gold text-black px-6 py-3 rounded-full">Generate with Grok AI</a>
+        <a href="https://huggingface.co/spaces" target="_blank" class="bg-depin-gold text-black px-6 py-3 rounded-full">AI Meme & Video Tools</a>
+      </div>
+      <p class="mt-4 text-sm">Connect your wallet to unlock premium creation features (coming soon)</p>
+    </div>
+
+    <!-- Connect & Buy -->
+    <div class="card text-center">
+      <h2 class="text-2xl gold mb-6">Connect & Buy from Any Platform</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="https://jup.ag/swap/SOL-GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump" class="bg-depin-green text-black px-8 py-4 rounded-full">Buy on Jupiter</a>
+        <a href="https://raydium.io/swap/" class="bg-depin-green text-black px-8 py-4 rounded-full">Buy on Raydium</a>
+      </div>
+    </div>
+
+    <footer class="text-center mt-16 text-gray-600">
+      © 2026 $PEPEDEPIN – The Eternal DePIN Empire on Solana
+    </footer>
+  </div>
+
+  <!-- Simple Wallet Check Script -->
+  <script>
+    async function checkWallet() {
+      if (!window.solana) {
+        alert("Please install Phantom Wallet!");
+        return;
+      }
+      try {
+        await window.solana.connect();
+        const publicKey = window.solana.publicKey.toString();
+        alert("Wallet connected: " + publicKey.substring(0, 6) + "...");
+        // Future: Add real holdings check here
+      } catch (err) {
+        alert("Connection failed: " + err.message);
+      }
     }
-  ]
-}
+  </script>
+</body>
+</html>
