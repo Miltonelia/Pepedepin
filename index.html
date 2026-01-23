@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PEPEDEPIN | Architects Empire - DePIN on Solana</title>
+    <title>PEPEDEPIN | The Architects' Empire - Solana DePIN</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -19,9 +19,9 @@
         .neon-border { border: 1px solid rgba(57, 255, 20, 0.2); transition: all 0.3s ease; }
         .neon-border:hover { border-color: var(--neon-green); box-shadow: 0 0 15px rgba(57, 255, 20, 0.2); }
         .hero-bg { background: linear-gradient(to top, var(--deep-black), transparent), url('https://i.imgur.com/sgafAfb.png'); background-size: cover; background-position: center; }
-        .glass { background: rgba(26, 26, 26, 0.6); backdrop-filter: blur(10px); }
-        .glow-button { background-color: var(--neon-green); transition: all 0.3s ease; }
-        .glow-button:hover { box-shadow: 0 0 20px var(--neon-green); transform: translateY(-2px); }
+        .glass { background: rgba(26, 26, 26, 0.7); backdrop-filter: blur(12px); }
+        .glow-button { background-color: var(--neon-green); transition: all 0.3s ease; border: none; }
+        .glow-button:hover { box-shadow: 0 0 25px var(--neon-green); transform: translateY(-2px); cursor: pointer; }
     </style>
 </head>
 <body class="overflow-x-hidden">
@@ -33,69 +33,83 @@
                 <span class="font-orbitron text-xl font-black tracking-tighter neon-text uppercase">PEPEDEPIN</span>
             </div>
             <div class="hidden md:flex gap-8 text-[10px] uppercase font-bold tracking-[0.2em]">
-                <a href="#empire" class="hover:text-[var(--neon-green)]">The Empire</a>
-                <a href="#network" class="hover:text-[var(--neon-green)]">Network</a>
-                <a href="#tools" class="hover:text-[var(--neon-green)]">Architect Tools</a>
-                <a href="#foundation" class="hover:text-[var(--neon-green)]">Foundation</a>
+                <a href="#empire" class="hover:text-[var(--neon-green)] transition-colors">The Empire</a>
+                <a href="#network" class="hover:text-[var(--neon-green)] transition-colors">Network</a>
+                <a href="#tools" class="hover:text-[var(--neon-green)] transition-colors">Tools</a>
+                <a href="#foundation" class="hover:text-[var(--neon-green)] transition-colors">Foundation</a>
             </div>
-            <button class="glow-button text-black text-[10px] font-black px-6 py-2 rounded-full uppercase tracking-widest">Connect Wallet</button>
+            <div class="flex items-center gap-4">
+                <a href="https://pepedepin.fun" target="_blank" class="text-[10px] font-bold text-[var(--gold)] hover:underline uppercase">pepedepin.fun</a>
+                <button class="glow-button text-black text-[10px] font-black px-6 py-2 rounded-full uppercase tracking-widest">Connect Wallet</button>
+            </div>
         </div>
     </nav>
 
     <section id="empire" class="hero-bg h-screen flex items-center justify-center relative">
         <div class="text-center px-6 z-10">
-            <h1 class="font-orbitron text-5xl md:text-8xl font-black neon-text mb-4">THE CORONATION</h1>
-            <p class="text-gray-300 text-sm md:text-lg max-w-2xl mx-auto mb-10 tracking-widest uppercase">
-                Building the future of DePIN on Solana. <br> Powered by <span class="text-[var(--gold)]">100 Architects</span>.
+            <h1 class="font-orbitron text-5xl md:text-8xl font-black neon-text mb-4 uppercase">The Coronation</h1>
+            <p class="text-gray-300 text-sm md:text-lg max-w-2xl mx-auto mb-10 tracking-widest uppercase font-bold">
+                Evolving DePIN on Solana. <br> Led by <span class="text-[var(--gold)] font-black">100 Architects</span>.
             </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="https://jup.ag/swap/SOL-GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump" class="glow-button text-black px-10 py-4 rounded-full font-black uppercase text-sm">Buy $PEPEDEPIN</a>
-                <a href="https://dexscreener.com/solana/GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump" class="border border-[var(--neon-green)] text-[var(--neon-green)] px-10 py-4 rounded-full font-black uppercase text-sm hover:bg-[var(--neon-green)]/10">Live Chart</a>
+                <a href="https://join.pump.fun/HSag/n1pkw4x1" target="_blank" class="glow-button text-black px-10 py-4 rounded-full font-black uppercase text-sm flex items-center justify-center">
+                    <img src="https://pump.fun/logo.png" class="w-4 mr-2 hidden" alt=""> BUY ON PUMP.FUN
+                </a>
+                <a href="https://dexscreener.com/solana/GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump" target="_blank" class="border border-[var(--neon-green)] text-[var(--neon-green)] px-10 py-4 rounded-full font-black uppercase text-sm hover:bg-[var(--neon-green)]/10 flex items-center justify-center transition-all">Live Chart</a>
             </div>
         </div>
     </section>
 
     <section id="network" class="py-16 border-y border-white/5 bg-[#080808]">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 font-bold">
             <div class="text-center">
-                <p class="text-[10px] text-[var(--gold)] uppercase font-bold mb-2 tracking-widest">Nodes Active</p>
+                <p class="text-[10px] text-[var(--gold)] uppercase mb-2 tracking-widest">Active Nodes</p>
                 <p class="font-orbitron text-3xl font-black text-white">100/100</p>
             </div>
             <div class="text-center">
-                <p class="text-[10px] text-[var(--gold)] uppercase font-bold mb-2 tracking-widest">Network Uptime</p>
-                <p class="font-orbitron text-3xl font-black neon-text">99.9%</p>
+                <p class="text-[10px] text-[var(--gold)] uppercase mb-2 tracking-widest">Uptime Score</p>
+                <p class="font-orbitron text-3xl font-black neon-text">99.99%</p>
             </div>
             <div class="text-center">
-                <p class="text-[10px] text-[var(--gold)] uppercase font-bold mb-2 tracking-widest">Architects Staked</p>
+                <p class="text-[10px] text-[var(--gold)] uppercase mb-2 tracking-widest">Architects Staked</p>
                 <p class="font-orbitron text-3xl font-black text-white">1,240</p>
             </div>
             <div class="text-center">
-                <p class="text-[10px] text-[var(--gold)] uppercase font-bold mb-2 tracking-widest">Treasury (Squads)</p>
-                <p class="font-orbitron text-3xl font-black neon-text">SECURED</p>
+                <p class="text-[10px] text-[var(--gold)] uppercase mb-2 tracking-widest">Treasury Guard</p>
+                <p class="font-orbitron text-2xl font-black neon-text uppercase tracking-tighter">Squads MS</p>
             </div>
         </div>
     </section>
 
     <section id="tools" class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="font-orbitron text-3xl font-black text-center mb-16 uppercase tracking-tighter">Architect <span class="neon-text">Command Center</span></h2>
+        <div class="text-center mb-16">
+            <h2 class="font-orbitron text-4xl font-black uppercase tracking-tighter italic underline decoration-[var(--neon-green)] decoration-4 underline-offset-8">Command Center</h2>
+            <p class="text-gray-500 text-[10px] uppercase tracking-[0.4em] mt-6 font-bold">Proprietary DePIN Infrastructure</p>
+        </div>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="glass p-8 rounded-2xl neon-border group">
-                <i class="fa-solid fa-microchip text-4xl mb-6 text-[var(--neon-green)]"></i>
-                <h3 class="font-orbitron text-xl font-bold mb-4">REWARDS PORTAL</h3>
-                <p class="text-gray-400 text-xs leading-relaxed mb-6">Claim rewards via Merkle Proofs. Our off-chain engine calculates contributions for on-chain distribution.</p>
-                <span class="text-[10px] text-[var(--neon-green)] font-bold cursor-pointer">LAUNCH INTERFACE -></span>
+                <div class="w-14 h-14 bg-[var(--neon-green)]/10 rounded-full flex items-center justify-center mb-6 border border-[var(--neon-green)]/20">
+                    <i class="fa-solid fa-microchip text-2xl text-[var(--neon-green)]"></i>
+                </div>
+                <h3 class="font-orbitron text-xl font-bold mb-4 tracking-tighter uppercase">Rewards Portal</h3>
+                <p class="text-gray-400 text-xs leading-relaxed mb-6 italic">Claim rewards through our Merkle Proof engine. Real-time off-chain contribution tracking for secure on-chain distribution.</p>
+                <button class="text-[10px] text-[var(--neon-green)] font-black uppercase tracking-widest hover:underline">Launch Interface <i class="fa-solid fa-arrow-right ml-2"></i></button>
             </div>
             <div class="glass p-8 rounded-2xl neon-border group">
-                <i class="fa-solid fa-brain text-4xl mb-6 text-[var(--neon-green)]"></i>
-                <h3 class="font-orbitron text-xl font-bold mb-4">AI PROPAGANDA</h3>
-                <p class="text-gray-400 text-xs leading-relaxed mb-6">Access the Empire's AI engine to generate high-fidelity memes and architectural blueprints.</p>
-                <span class="text-[10px] text-[var(--neon-green)] font-bold cursor-pointer">GENERATE ASSETS -></span>
+                <div class="w-14 h-14 bg-[var(--neon-green)]/10 rounded-full flex items-center justify-center mb-6 border border-[var(--neon-green)]/20">
+                    <i class="fa-solid fa-brain text-2xl text-[var(--neon-green)]"></i>
+                </div>
+                <h3 class="font-orbitron text-xl font-bold mb-4 tracking-tighter uppercase">AI Propaganda</h3>
+                <p class="text-gray-400 text-xs leading-relaxed mb-6 italic">Leverage the Architect's AI engine to generate high-fidelity marketing assets and blueprints for the Empire's expansion.</p>
+                <button class="text-[10px] text-[var(--neon-green)] font-black uppercase tracking-widest hover:underline">Open Generator <i class="fa-solid fa-arrow-right ml-2"></i></button>
             </div>
             <div class="glass p-8 rounded-2xl neon-border group">
-                <i class="fa-solid fa-shield-halved text-4xl mb-6 text-[var(--neon-green)]"></i>
-                <h3 class="font-orbitron text-xl font-bold mb-4">SQUADS VAULT</h3>
-                <p class="text-gray-300 text-xs leading-relaxed mb-6">Treasury managed by 100 Architects via Multisig. Every SOL is accounted for in the infrastructure.</p>
-                <span class="text-[10px] text-[var(--neon-green)] font-bold cursor-pointer">VIEW GOVERNANCE -></span>
+                <div class="w-14 h-14 bg-[var(--neon-green)]/10 rounded-full flex items-center justify-center mb-6 border border-[var(--neon-green)]/20">
+                    <i class="fa-solid fa-shield-halved text-2xl text-[var(--neon-green)]"></i>
+                </div>
+                <h3 class="font-orbitron text-xl font-bold mb-4 tracking-tighter uppercase">Squads Vault</h3>
+                <p class="text-gray-400 text-xs leading-relaxed mb-6 italic">Decentralized treasury management. 100% of network funds are secured via Squads Multisig governance system.</p>
+                <button class="text-[10px] text-[var(--neon-green)] font-black uppercase tracking-widest hover:underline">Inspect Vault <i class="fa-solid fa-arrow-right ml-2"></i></button>
             </div>
         </div>
     </section>
@@ -103,41 +117,40 @@
     <section id="foundation" class="py-24 px-6 bg-[#080808]">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <div>
-                <h2 class="font-orbitron text-4xl font-black mb-8">THE <span class="neon-text">FOUNDATION</span></h2>
-                <div class="space-y-6 text-gray-400 text-sm leading-relaxed">
-                    <p>Unlike attention-memes, $PEPEDEPIN is building a tangible legacy on Solana. We utilize the <span class="text-white">Token Program</span> for maximum interoperability.</p>
-                    <p>Our infrastructure thrives on Decentralized Physical Infrastructure Networks (DePIN), rewarding those who build, not just those who watch.</p>
+                <h2 class="font-orbitron text-4xl font-black mb-8 uppercase tracking-tighter">The <span class="neon-text">Foundation</span></h2>
+                <div class="space-y-6 text-gray-400 text-sm leading-relaxed font-bold">
+                    <p>Unlike transient tokens, <span class="text-white">$PEPEDEPIN</span> is forging a tangible physical infrastructure on Solana. We utilize the <span class="text-[var(--neon-green)] italic underline">SPL Token Program</span> for seamless integration.</p>
+                    <p>Our network thrives on decentralized participation, rewarding the Architects who provide the backbone for our future services.</p>
                 </div>
-                <div class="mt-10 p-6 glass border border-white/10 rounded-xl">
-                    <p class="text-[10px] text-[var(--gold)] font-bold uppercase mb-2">Contract Address</p>
+                <div class="mt-10 p-6 glass border border-white/10 rounded-xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-30 transition-opacity"><i class="fa-solid fa-fingerprint text-5xl"></i></div>
+                    <p class="text-[10px] text-[var(--gold)] font-bold uppercase mb-2 tracking-tighter">Contract Address (CA)</p>
                     <div class="flex items-center justify-between font-mono text-xs">
-                        <span class="break-all">GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump</span>
-                        <i class="fa-regular fa-copy cursor-pointer hover:text-[var(--neon-green)] ml-4"></i>
+                        <span class="break-all text-white font-black tracking-tighter">GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump</span>
+                        <button onclick="navigator.clipboard.writeText('GVqPnCNNQ43TfFSAA52hwNAFxGyFw8N3H18HBFYgpump')" class="hover:text-[var(--neon-green)] transition-all ml-4">
+                            <i class="fa-regular fa-copy text-xl"></i>
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <img src="https://i.imgur.com/52AYrzP.png" class="rounded-lg neon-border grayscale hover:grayscale-0 transition-all duration-500">
-                <img src="https://i.imgur.com/VpXI9hx.png" class="rounded-lg neon-border grayscale hover:grayscale-0 transition-all duration-500 mt-8">
-                <img src="https://i.imgur.com/PHUIvWG.png" class="rounded-lg neon-border grayscale hover:grayscale-0 transition-all duration-500">
-                <img src="https://i.imgur.com/kHpS4wG.png" class="rounded-lg neon-border grayscale hover:grayscale-0 transition-all duration-500 mt-8">
+                <img src="https://i.imgur.com/52AYrzP.png" class="rounded-lg neon-border grayscale hover:grayscale-0 transition-all duration-700 shadow-xl">
+                <img src="https://i.imgur.com/VpXI9hx.png" class="rounded-lg neon-border grayscale hover:grayscale-0 transition-all duration-700 shadow-xl mt-8">
+                <img src="https://i.imgur.com/PHUIvWG.png" class="rounded-lg neon-border grayscale hover:grayscale-0 transition-all duration-700 shadow-xl">
+                <img src="https://i.imgur.com/kHpS4wG.png" class="rounded-lg neon-border grayscale hover:grayscale-0 transition-all duration-700 shadow-xl mt-8">
             </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-white/5 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="flex items-center gap-3">
-                <img src="https://i.imgur.com/AwHcCOp.png" class="w-8 h-8 rounded-full">
-                <span class="font-orbitron font-bold text-sm">PEPEDEPIN</span>
+    <footer class="py-16 border-t border-white/5 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="flex items-center gap-4">
+                <img src="https://i.imgur.com/AwHcCOp.png" class="w-12 h-12 rounded-full border border-[var(--gold)] shadow-lg shadow-[var(--gold)]/20 animate-pulse">
+                <div class="flex flex-col">
+                    <span class="font-orbitron font-black text-xl leading-tight tracking-tighter neon-text">PEPEDEPIN</span>
+                    <span class="text-[8px] text-gray-500 uppercase tracking-widest font-bold">The DePIN Sovereign</span>
+                </div>
             </div>
-            <div class="flex gap-8">
-                <a href="https://x.com/PepeDepin" class="text-2xl hover:text-[var(--neon-green)]"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://t.me/+ppq2m577cMJjOTdh" class="text-2xl hover:text-[var(--neon-green)]"><i class="fa-brands fa-telegram"></i></a>
-            </div>
-            <p class="text-[8px] uppercase tracking-widest text-gray-500">© 2026 THE ARCHITECTS. BUILT ON SOLANA.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+            <div class="flex gap-10">
+                <a href="https://x.com/PepeDepin" target="_blank" class="text-3xl hover:text-[var(--neon-green)] transition-all transform hover:scale-110"><i class="fa-brands fa-x-twitter"></i></a>
+                <a
